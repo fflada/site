@@ -1,0 +1,345 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+@font-face {
+    font-family: "Hagrid_Italic";
+    src: url("./fonts/Hagrid_Italic.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeutralFace";
+    src: url("./fonts/NeutralFace.otf");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NotoSans_Regular";
+    src: url("./fonts/NotoSans_Regular.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NotoSans_Bold";
+    src: url("./fonts/NotoSans_Bold.ttf");
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #CEDEBD;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_main {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.header_title_h1 {
+    font-family: "Hagrid_Italic";
+    color: #435334;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.header_title_h2{
+    font-family: "NeutralFace";
+    color: #435334;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 43px 19px 43px;
+}
+
+
+.header_nav_border {
+    border: 2px solid #435334;
+    border-radius: 36px;
+}
+
+.nav_conteiner {
+    display: flex;
+
+}
+
+.nav_conteiner a {
+    color: #435334;
+    font-family: "NotoSans_Regular";
+    font-size: 20px;
+}
+
+.nav_conteiner a:hover {
+    color: #0A6634;
+    text-decoration:  2px #0A6634 underline;
+    transition: 0.5s;
+}
+
+.nav_conteiner p {
+    color: #435334;
+    font-family: "NotoSans_Regular";
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.nav_conteiner_main {
+    padding-top: 37px;
+}
+
+.local_title {
+    font-family: "NeutralFace";
+    font-size: 40px;
+    color: #435334;
+    text-transform: uppercase;
+    padding-top: 37px;
+}
+
+.main_filter button {
+    font-family: "NotoSans_Regular";
+    font-size: 20px;
+    color: #435334;
+    background-color: #CEDEBD;
+    border: 1px solid #435334;
+    border-radius: 36px;
+    padding: 5px 27px;
+    margin-top: 29px;
+    margin-left: 8px;
+    margin-bottom: 83px;
+}
+
+.main_filter button:hover {
+    background-color: #435334;
+    color: #CEDEBD;
+    transition: 0.5s;
+}
+
+.card {
+    width: 282px; 
+    height: 331px; 
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 22px; 
+    
+}
+
+.card_title {
+    left: 9px; 
+    top: 304px; 
+    position: absolute; 
+    color: #435334; 
+    font-size: 20px; 
+    font-family: "NotoSans_Regular";
+    font-weight: 400; 
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.card_img_blur {
+    width: 282px;
+    height: 282px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    box-shadow: 10px 10px 10px; 
+    filter: blur(10px);
+}
+
+.card_img {
+    width: 263px;
+    height: 263px; 
+    left: 9px; 
+    top: 9px; 
+    position: absolute; 
+    border-radius: 10px; 
+}
+
+.card_div { 
+    width: 282px;
+    height: 282px; 
+}
+
+.card_line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.all_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.maim_footer {
+    width: 320px;
+}
+
+.maim_footer h4 {
+    font-family: "Hagrid_Italic";
+    color: #435334;
+    font-size: 30px;
+}
+
+.maim_footer p {
+    font-family: "NotoSans_Regular";
+    color: #435334;
+    opacity: 63%;
+    font-size: 12px;
+}
+
+.info h5 {
+    font-family: "NotoSans_Bold";
+    color: #435334;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-family: "NotoSans_Regular";
+    color: #435334;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.info_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.background_blur {
+    position: absolute;
+    z-index: -100000;
+    top: 10px;
+    left: -200px;
+}
+
+.background_blur_footer {
+    position: absolute;
+    z-index: -100000;
+    top: 1500px;
+    margin: 0;
+}
+
+.background_flover {
+    position: absolute;
+    z-index: -100000;
+    top: 446px;
+    right: 0;
+}
